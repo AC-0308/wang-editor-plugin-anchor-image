@@ -55,6 +55,6 @@ export const parseDataImgConf = {
   parseElemHtml: parseDataImg,
 }
 export const parseOriginImgConf = {
-  selector: 'img[data-w-e-type="anchor-image"]',
+  selector: '*:not(a) > img',
   parseElemHtml: parseDataImg,
 }

@@ -58,11 +58,11 @@ function withAnchorImage<T extends IDomEditor>(editor: T): T {
 
     if (_hasImageFiles) {
       // 有图片文件，则上传图片
-      uploadImages(editor, files)
-    } else {
-      // 如果没有， 则继续 insertData
-      insertData(data)
+      return uploadImages(editor, files)
     }
+
+    // 如果没有， 则继续 insertData
+    insertData(data)
   }
 
   // 返回 editor ，重要！

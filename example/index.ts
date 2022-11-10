@@ -44,7 +44,7 @@ const editor = createEditor({
   selector: '#editor-container',
   config: editorConfig,
   html: `<p>
-      <img
+      <!--<img
         data-w-e-type="anchor-image"
         src="http://127.0.0.1:3000/upload-files/wangeditor-uploaded-image-yam"
         alt=""
@@ -83,12 +83,10 @@ const editor = createEditor({
         data-href=""
         style=""
       />
-
+-->
       <img
-        data-w-e-type="anchor-image"
-        src="http://127.0.0.1:3000/upload-files/wangeditor-uploaded-image-20w"
+        src="https://www.glitches.fun/assets/images/logos/frp.jpeg"
         alt=""
-        data-href=""
         style=""
       />
     </p>`,
