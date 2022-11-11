@@ -1,6 +1,6 @@
 {
   "name": "plugin-anchor-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wangEditor 插入超链接图片",
   "keywords": [
     "wangeditor"
@@ -15,14 +15,11 @@
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.js",
     "build:analyzer": "cross-env NODE_ENV=production_analyzer webpack --config build/webpack.prod.js",
     "release": "release-it",
-    "format": "yarn prettier --write",
     "lint": "eslint \"{src,test,cypress,build,example}/**/*.{js,ts}\"",
-    "lint-fix": "eslint --fix \"{src,test,cypress,build,example}/**/*.{js,ts}\"",
-    "prettier": "prettier --write --config .prettierrc.js \"{src,test,cypress,build,example}/**/*.{js,ts}\""
+    "lint-fix": "eslint --fix \"{src,test,cypress,build,example}/**/*.{js,ts}\""
   },
   "lint-staged": {
     "*.{ts,tsx,js}": [
-      "yarn prettier",
       "yarn lint"
     ]
   },
@@ -56,8 +53,6 @@
     "css-loader": "^5.2.0",
     "cz-customizable": "^6.3.0",
     "eslint": "^8.9.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "html-webpack-plugin": "^5.3.1",
     "husky": "^7.0.4",
     "less": "^4.1.1",
@@ -65,7 +60,6 @@
     "lint-staged": "^12.3.4",
     "lodash.throttle": "^4.1.1",
     "postcss-loader": "^5.2.0",
-    "prettier": "^2.5.1",
     "raw-loader": "^4.0.2",
     "release-it": "^14.11.6",
     "snabbdom": "^3.3.1",

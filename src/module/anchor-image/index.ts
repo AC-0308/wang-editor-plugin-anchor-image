@@ -1,8 +1,12 @@
-import { IModuleConf } from '@wangeditor/core'
-import withAnchorImage from './plugin'
-import { renderAnchorImageConf } from './render-elem'
-import { anchorImageToHtmlConf } from './elem-to-html'
-import { parseAnchorImgConf, parseDataImgConf, parseOriginImgConf } from './parse-elem-html'
+import { IModuleConf } from "@wangeditor/core";
+import withAnchorImage from "./plugin";
+import { renderAnchorImageConf } from "./render-elem";
+import { anchorImageToHtmlConf } from "./elem-to-html";
+import {
+  parseAnchorImgConf,
+  parseDataImgConf,
+  parseOriginImgConf,
+} from "./parse-elem-html";
 import {
   insertImageMenuConf,
   deleteImageMenuConf,
@@ -12,7 +16,7 @@ import {
   imageWidth50MenuConf,
   imageWidth100MenuConf,
   uploadImageMenuConf,
-} from './menu'
+} from "./menu";
 
 const image: Partial<IModuleConf> = {
   renderElems: [renderAnchorImageConf],
@@ -29,6 +33,6 @@ const image: Partial<IModuleConf> = {
     uploadImageMenuConf,
   ],
   editorPlugin: withAnchorImage,
-}
+};
 
-export default image
+export default image;

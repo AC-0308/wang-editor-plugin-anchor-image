@@ -1,38 +1,38 @@
-import { Transforms } from 'slate'
-import { IButtonMenu, IDomEditor, DomEditor, t } from '@wangeditor/core'
-import { TRASH_SVG } from '@/constants/icon-svg'
+import { Transforms } from "slate";
+import { IButtonMenu, IDomEditor, DomEditor, t } from "@wangeditor/core";
+import { TRASH_SVG } from "@/constants/icon-svg";
 
 class DeleteImage implements IButtonMenu {
-  readonly title = '删除图片'
-  readonly iconSvg = TRASH_SVG
-  readonly tag = 'button'
+  readonly title = "删除图片";
+  readonly iconSvg = TRASH_SVG;
+  readonly tag = "button";
 
   getValue(editor: IDomEditor): string | boolean {
     // 无需获取 val
-    return ''
+    return "";
   }
 
   isActive(editor: IDomEditor): boolean {
     // 无需 active
-    return false
+    return false;
   }
 
   isDisabled(editor: IDomEditor): boolean {
-    if (editor.selection == null) return true
+    if (editor.selection == null) return true;
 
-    const imageNode = DomEditor.getSelectedNodeByType(editor, 'anchor-image')
+    const imageNode = DomEditor.getSelectedNodeByType(editor, "anchor-image");
     // 选区未处于 image node ，则禁用
-    return imageNode == null
+    return imageNode == null;
   }
 
   exec(editor: IDomEditor, value: string | boolean) {
-    if (this.isDisabled(editor)) return
+    if (this.isDisabled(editor)) return;
 
     // 删除图片
     Transforms.removeNodes(editor, {
-      match: n => DomEditor.checkNodeType(n, 'anchor-image'),
-    })
+      match: (n) => DomEditor.checkNodeType(n, "anchor-image"),
+    });
   }
 }
 
-export default DeleteImage
+export default DeleteImage;
