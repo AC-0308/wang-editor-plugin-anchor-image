@@ -9,7 +9,7 @@ import {
   createToolbar,
   IEditorConfig,
 } from "@wangeditor/editor";
-import HyperlinkImageModule, { IMAGE_SVG } from "../src/index";
+import HyperlinkImageModule, {IMAGE_SVG} from "../src/index";
 
 // @ts-ignore
 Boot.registerModule(HyperlinkImageModule);
@@ -52,7 +52,7 @@ const editorConfig: Partial<IEditorConfig> = {
 const editor = createEditor({
   selector: "#editor-container",
   config: editorConfig,
-  html: `<p><a data-w-e-is-inline data-w-e-is-void data-w-e-type="anchor-image" href="https://e.gitee.com/baicmotor/projects/351006/tests/test_cases" target="_blank"><img data-w-e-type="anchor-image_image" src="https://dev-beijing-zone-temporary.oss-cn-beijing.aliyuncs.com/20221111/8a8a80ea7fe48a8c01802193d40b0f45/1668132985873-785-Snipaste_2022-11-04_16-58-26.png" alt="Snipaste_2022-11-04_16-58-26.png" data-href="https://e.gitee.com/baicmotor/projects/351006/tests/test_cases" style=""/></a></p>`,
+  html: "",
 });
 
 const toolbar = createToolbar({
@@ -78,3 +78,32 @@ const toolbar = createToolbar({
 window.editor = editor;
 // @ts-ignore
 window.toolbar = toolbar;
+
+function setOptions() {
+  const selectDom = (document.getElementById('key') as HTMLSelectElement);
+  selectDom.innerHTML = '';
+  Object.keys(localStorage).forEach(key => {
+    const option = document.createElement('option');
+    option.setAttribute('value', key);
+    option.innerText = key;
+    selectDom.appendChild(option).value = key;
+  });
+}
+
+setOptions();
+
+(document.getElementById('getDetail') as HTMLButtonElement)
+  .addEventListener('click', () => {
+    setTimeout(() => {
+      const key = (document.getElementById('key') as HTMLSelectElement).value
+      editor.setHtml(localStorage.getItem(key) as string)
+    }, 300)
+  });
+
+(document.getElementById('saveDetail') as HTMLButtonElement)
+  .addEventListener('click', () => {
+    const html = editor.getHtml();
+    const key = Math.random().toString();
+    localStorage.setItem(key, html);
+    setOptions();
+  })
