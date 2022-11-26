@@ -11,6 +11,11 @@
   ],
   "author": "github.com/ac-0308",
   "contributors": ["github.com/wangeditor-team"],
+  "homepage": "https://github.com/AC-0308/wang-editor-plugin-anchor-image",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AC-0308/wang-editor-plugin-anchor-image"
+  },
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",
