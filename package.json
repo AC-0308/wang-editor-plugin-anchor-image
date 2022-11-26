@@ -1,11 +1,16 @@
 {
-  "name": "plugin-anchor-image",
+  "name": "wang-editor-plugin-anchor-image",
   "version": "1.0.1",
   "description": "wangEditor 插入超链接图片",
   "keywords": [
-    "wangeditor"
+    "wangeditor",
+    "wang-editor",
+    "plugin",
+    "anchor-image",
+    "image"
   ],
   "author": "github.com/ac-0308",
+  "contributors": ["github.com/wangeditor-team"],
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.js",

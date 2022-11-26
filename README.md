@@ -7,7 +7,7 @@
 ## 安装
 
 ```shell
-yarn add @wangeditor/plugin-upload-attachment
+yarn add wang-editor-plugin-anchor-image
 ```
 
 ## 使用
@@ -18,10 +18,10 @@ yarn add @wangeditor/plugin-upload-attachment
 
 ```js
 import { Boot } from '@wangeditor/editor'
-import attachmentModule from '@wangeditor/plugin-upload-attachment'
+import AnchorImageModule from 'wang-editor-plugin-anchor-image'
 
 // 注册。要在创建编辑器之前注册，且只能注册一次，不可重复注册。
-Boot.registerModule(attachmentModule)
+Boot.registerModule(AnchorImageModule)
 ```
 
 ### 配置
