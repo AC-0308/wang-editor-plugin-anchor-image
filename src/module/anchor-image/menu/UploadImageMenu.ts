@@ -1,7 +1,7 @@
 import { IButtonMenu, IDomEditor, t } from "@wangeditor/core";
 import { insertImageNode, isInsertImageMenuDisabled } from "../helper";
-import { UPLOAD_IMAGE_SVG } from "@/constants/icon-svg";
-import $ from "@/utils/dom";
+import { UPLOAD_IMAGE_SVG } from "../../../constants/icon-svg";
+import $ from "../../../utils/dom";
 import { IUploadConfigForImage } from "./config";
 import uploadImages from "../upload-images";
 

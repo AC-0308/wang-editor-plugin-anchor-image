@@ -5,3 +5,15 @@ node_modules/
 test/
 yarn.lock
 package-lock.json
+src/
+example/
+.babelrc
+.cz-config.js
+.editorconfig
+.eslintignore
+.eslintrc.js
+.gitignore
+.release-it.js
+.yarnrc
+commitlint.config.js
+postcss.config.js

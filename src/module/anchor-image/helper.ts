@@ -1,7 +1,7 @@
 import { Editor, Range, Transforms } from "slate";
 import { DomEditor, IDomEditor } from "@wangeditor/core";
-import { ImageElement, ImageStyle } from "@/types";
-import { replaceSymbols } from "@/utils/util";
+import { ImageElement, ImageStyle } from "../../types";
+import { replaceSymbols } from "../../utils/util";
 
 const UPLOAD_MENU_KEY = "uploadImage";
 const EDIT_MENU_KEY = "editImage";

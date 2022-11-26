@@ -1,5 +1,5 @@
 import { Element } from "slate";
-import type { ImageElement } from "@/types";
+import type { ImageElement } from "../../types";
 
 function imageToHtml(elemNode: Element, childrenHtml: string): string {
   const { src, alt = "", href = "", style = {} } = elemNode as ImageElement;

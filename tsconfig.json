@@ -1,8 +1,5 @@
 {
     "compilerOptions": {
-      "paths": {
-        "@/*": ["./src/*"]
-      },
       "target": "es5",
       "module": "ES2015",
       "lib": ["es6", "dom", "esnext"],
@@ -21,8 +18,7 @@
     },
     "include": [
       "src/**/*",
-      "example/**/*",
-//      "test/**/*"
+      "example/**/*"
     ],
     "exclude": [
       "node_modules",

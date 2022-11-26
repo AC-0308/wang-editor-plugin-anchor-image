@@ -6,9 +6,9 @@ import {
   genModalButtonElems,
   t,
 } from "@wangeditor/core";
-import $, { Dom7Array, DOMElement } from "@/utils/dom";
-import { genRandomStr } from "@/utils/util";
-import { IMAGE_SVG } from "@/constants/icon-svg";
+import $, { Dom7Array, DOMElement } from "../../../utils/dom";
+import { genRandomStr } from "../../../utils/util";
+import { IMAGE_SVG } from "../../../constants/icon-svg";
 import { insertImageNode, isInsertImageMenuDisabled } from "../helper";
 
 /**

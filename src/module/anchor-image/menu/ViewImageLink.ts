@@ -1,6 +1,6 @@
 import { IButtonMenu, IDomEditor, DomEditor, t } from "@wangeditor/core";
-import { EXTERNAL_SVG } from "@/constants/icon-svg";
-import { ImageElement } from "@/types";
+import { EXTERNAL_SVG } from "../../../constants/icon-svg";
+import { ImageElement } from "../../../types";
 
 class ViewImageLink implements IButtonMenu {
   readonly title = "跳转查看超链接";

@@ -37,8 +37,5 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
-    alias: {
-      "@": require("path").resolve(__dirname, srcPath),
-    },
   },
 };

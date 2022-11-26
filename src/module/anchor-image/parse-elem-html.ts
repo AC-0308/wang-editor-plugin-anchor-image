@@ -1,7 +1,7 @@
 import { Descendant } from "slate";
 import { IDomEditor } from "@wangeditor/core";
-import { ImageElement } from "@/types";
-import $, { DOMElement, getStyleValue } from "@/utils/dom";
+import { ImageElement } from "../../types";
+import $, { DOMElement, getStyleValue } from "../../utils/dom";
 
 function parseAnchorImg(
   elem: DOMElement,

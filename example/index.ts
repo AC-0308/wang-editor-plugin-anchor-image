@@ -9,7 +9,8 @@ import {
   createToolbar,
   IEditorConfig,
 } from "@wangeditor/editor";
-import HyperlinkImageModule, {IMAGE_SVG} from "../src/index";
+import HyperlinkImageModule from "../src/index";
+import {IMAGE_SVG} from "../src"
 
 // @ts-ignore
 Boot.registerModule(HyperlinkImageModule);

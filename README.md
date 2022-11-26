@@ -34,16 +34,14 @@ import { IEditorConfig } from '@wangeditor/editor'
 const editorConfig: Partial<IEditorConfig> = {
   // 在编辑器中，点击选中“图片”节点时，要弹出的菜单
   'anchor-image': {
-    image: {
-      menuKeys: [
-        'editAnchorImage', // 编辑图片属性
-        'viewImageAnchor', // 新标签页打开图片超链接
-        'anchorImageWidth30', // 图片宽度设置为页面的30%
-        'anchorImageWidth50', // 图片宽度设置为页面的50% 
-        'anchorImageWidth100', // 图片宽度设置为页面的100%
-        'deleteAnchorImage', // 删除图片节点
-      ], // “图片”菜单
-    },
+    menuKeys: [
+      'editAnchorImage', // 编辑图片属性
+      'viewImageAnchor', // 新标签页打开图片超链接
+      'anchorImageWidth30', // 图片宽度设置为页面的30%
+      'anchorImageWidth50', // 图片宽度设置为页面的50% 
+      'anchorImageWidth100', // 图片宽度设置为页面的100%
+      'deleteAnchorImage', // 删除图片节点
+    ], // “图片”菜单
   },
   MENU_CONF: {
     uploadImage: { // 上传文件的接口地址

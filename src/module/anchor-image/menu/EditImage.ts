@@ -7,11 +7,11 @@ import {
   genModalButtonElems,
   t,
 } from "@wangeditor/core";
-import $, { Dom7Array, DOMElement } from "@/utils/dom";
-import { genRandomStr } from "@/utils/util";
-import { PENCIL_SVG } from "@/constants/icon-svg";
+import $, { Dom7Array, DOMElement } from "../../../utils/dom";
+import { genRandomStr } from "../../../utils/util";
+import { PENCIL_SVG } from "../../../constants/icon-svg";
 import { updateImageNode } from "../helper";
-import { ImageElement, ImageStyle } from "@/types";
+import { ImageElement, ImageStyle } from "../../../types";
 
 /**
  * 生成唯一的 DOM ID

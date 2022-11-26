@@ -1,5 +1,5 @@
 import { IUploadConfig } from "@wangeditor/core";
-import { ImageElement } from "@/types";
+import { ImageElement } from "../../../types";
 
 type InsertFn = (src: string, alt: string, href: string) => void;
 
